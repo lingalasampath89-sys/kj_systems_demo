@@ -1,0 +1,66 @@
+<div class="spectrum-strip">
+    <div class="strip-segment s-indigo"></div>
+    <div class="strip-segment s-coral"></div>
+    <div class="strip-segment s-violet"></div>
+    <div class="strip-segment s-cyan"></div>
+    <div class="strip-segment s-sun"></div>
+    <div class="strip-segment s-leaf"></div>
+</div>
+
+<header class="navbar">
+    <div class="nav-container">
+        <a routerLink="/home" class="nav-logo">
+            <img src="/images/kj_logo.png" alt="KJ Systems" style="height: 60px; width: auto;">
+        </a>
+        <ul class="nav-links">
+            <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+            <li><a href="https://ehryourway.com/" target="_blank">Services</a></li>
+            <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+            <li><a routerLink="/careers" routerLinkActive="active">Careers</a></li>
+            <li><a href="https://ehryourway.com/" target="_blank" class="btn-green">Talk to us</a></li>
+        </ul>
+    </div>
+</header>
+
+<router-outlet></router-outlet>
+
+<footer class="footer">
+    <div class="container">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 48px;">
+            <div>
+                <h4 style="margin-bottom: 24px;">Product</h4>
+                <ul
+                    style="list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 14px; color: var(--text-muted);">
+                    <li><a href="https://ehryourway.com/" target="_blank">EHR YOUR WAY</a></li>
+                    <li><a href="#">Health Analytics</a></li>
+                    <li><a href="#">Cloud Systems</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="margin-bottom: 24px;">Company</h4>
+                <ul
+                    style="list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 14px; color: var(--text-muted);">
+                    <li><a routerLink="/about">Our Story</a></li>
+                    <li><a routerLink="/careers">Careers</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="margin-bottom: 24px;">Follow Us</h4>
+                <ul
+                    style="list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 14px; color: var(--text-muted);">
+                    <li><a href="https://www.facebook.com/kjsystemsindia/" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.linkedin.com/company/kj-systems-india-pvt-ltd/" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div
+            style="margin-top: 60px; padding-top: 24px; border-top: 1px solid #e2e8f0; display: flex; justify-content: space-between; font-size: 12px; color: #94a3b8;">
+            <p>&copy; 2024 KJ Systems India Private Limited. All rights reserved.</p>
+            <div style="display: flex; gap: 24px;">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+            </div>
+        </div>
+    </div>
+</footer>

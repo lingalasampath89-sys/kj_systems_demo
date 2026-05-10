@@ -1,0 +1,113 @@
+<main>
+    <!-- Carousel Hero Section -->
+    <section class="hero-carousel">
+        <div class="carousel-track" [style.transform]="'translateX(' + (-currentIndex * 100) + '%)'">
+            <div *ngFor="let item of carouselImages; let i = index" class="carousel-slide">
+                <img [src]="item.url" [alt]="item.title" style="image-rendering: -webkit-optimize-contrast;">
+                <div class="carousel-overlay" style="background: transparent;">
+                    <div class="carousel-content">
+                        <span class="hero-label">Healthcare Excellence</span>
+                        <h1 class="hero-title" style="color: var(--primary-dark);">{{item.title}}</h1>
+                        <p class="hero-sub" style="color: var(--text-muted);">{{item.sub}}</p>
+                        <div style="display: flex; gap: 16px;">
+                            <a href="https://ehryourway.com/" target="_blank" class="btn-talk">Request a demo</a>
+                            <a routerLink="/about" style="color: var(--primary-blue); padding: 16px; font-weight: 600; font-size: 16px; text-decoration: none;">Our Story &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-btn carousel-btn-left" (click)="prevSlide()">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <button class="carousel-btn carousel-btn-right" (click)="nextSlide()">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+    </section>
+
+    <!-- Physician-Led Innovation Section -->
+    <section class="section" style="background: radial-gradient(circle at 10% 20%, #F0F7FF 0%, #FFFFFF 100%); position: relative; overflow: hidden;">
+        <div style="position: absolute; top: -100px; right: -100px; width: 400px; height: 400px; background: rgba(49, 130, 206, 0.05); border-radius: 50%; filter: blur(80px);"></div>
+        <div class="container" style="position: relative; z-index: 2;">
+            <div style="display: flex; align-items: center; gap: 80px; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 350px;">
+                    <div style="width: 80px; height: 6px; background: var(--primary-blue); border-radius: 10px; margin-bottom: 32px;"></div>
+                    <h2 style="font-size: 48px; margin-bottom: 32px; color: var(--primary-dark); line-height: 1.1; font-weight: 800;">
+                        Built by Doctors, <br>
+                        <span style="color: var(--primary-blue);">For Doctors.</span>
+                    </h2>
+                    <p style="font-size: 19px; color: var(--text-muted); line-height: 1.8; margin-bottom: 24px;">
+                        Founded in 2008 by <strong>Dr. Kumara Prathipati and Dr. Joseph Reddy</strong>, KJ Systems was born out of a cumulative 70 years of practicing medicine.
+                    </p>
+                </div>
+                <div style="flex: 1; min-width: 350px;">
+                    <div class="card-premium" style="background: white; border: none; padding: 12px; box-shadow: 0 30px 60px rgba(0,0,0,0.08); transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                        <img src="https://images.pexels.com/photos/3184296/pexels-photo-3184296.jpeg" alt="KJ Systems Teamwork" style="width: 100%; border-radius: 20px; box-shadow: var(--shadow-premium); image-rendering: -webkit-optimize-contrast;">
+                        <div style="padding: 32px; text-align: center;">
+                            <p style="font-style: italic; color: var(--primary-dark); font-size: 18px; font-weight: 500;">"Our team of 500+ experts bridging the gap with technology."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Arrow Carousel -->
+    <section class="section" style="background: #fcfdfe; overflow: hidden;">
+        <div class="container">
+            <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 60px;">
+                <div>
+                    <span class="hero-label">OUR EXPERTISE</span>
+                    <h2 style="font-size: 42px; color: var(--primary-dark);">Comprehensive Services</h2>
+                </div>
+                <div style="display: flex; gap: 12px;">
+                    <button class="carousel-btn" style="position: relative; top: 0; left: 0; right: 0; background: white; border: 1px solid #e2e8f0; color: var(--primary-dark);" (click)="prevService()">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+                    </button>
+                    <button class="carousel-btn" style="position: relative; top: 0; left: 0; right: 0; background: white; border: 1px solid #e2e8f0; color: var(--primary-dark);" (click)="nextService()">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+                    </button>
+                </div>
+            </div>
+
+            <div style="position: relative;">
+                <div style="display: flex; transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1); gap: 32px;" [style.transform]="'translateX(' + (-serviceIndex * 33.33) + '%)'">
+                    <div *ngFor="let s of services" style="min-width: calc(33.33% - 22px); flex-shrink: 0;">
+                        <div class="card-premium" style="background: white; padding: 0; overflow: hidden; border: none; height: 100%;">
+                            <img [src]="s.img" [alt]="s.title" style="width: 100%; height: 180px; object-fit: cover; image-rendering: -webkit-optimize-contrast;">
+                            <div style="padding: 24px;">
+                                <h4 style="margin-bottom: 12px; color: var(--primary-blue); font-size: 18px;">{{s.title}}</h4>
+                                <p style="font-size: 14px; color: var(--text-muted); line-height: 1.6;">{{s.desc}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="section" style="
+        background: linear-gradient(rgba(49, 130, 206, 0.9), rgba(44, 82, 130, 0.9)), url('https://images.pexels.com/photos/3183132/pexels-photo-3183132.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: multiply;
+        color: white; 
+        border-radius: 40px; 
+        margin: 0 24px 80px; 
+        text-align: center; 
+        padding: 120px 40px;
+        box-shadow: 0 20px 50px rgba(49, 130, 206, 0.3);
+    ">
+        <div class="container">
+            <h2 style="font-size: 52px; color: white; margin-bottom: 24px; font-weight: 800;">Experience the Future of Healthcare</h2>
+            <p style="font-size: 22px; color: rgba(255, 255, 255, 0.9); margin-bottom: 48px; max-width: 750px; margin-left: auto; margin-right: auto; line-height: 1.6;">
+                Join 500+ professionals building the world's most intuitive EHR platform.
+            </p>
+            <div style="display: flex; gap: 24px; justify-content: center; flex-wrap: wrap;">
+                <a href="https://ehryourway.com/" target="_blank" class="btn-talk" style="background: white; color: var(--primary-blue) !important; padding: 18px 48px;">Book a Demo</a>
+                <a routerLink="/careers" class="btn-talk" style="background: transparent; border: 2px solid white; padding: 16px 46px;">Join our Team</a>
+            </div>
+        </div>
+    </section>
+</main>
