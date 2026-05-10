@@ -1,59 +1,34 @@
-# KjSystems
+# KJ Systems India Private Limited - Modernized Corporate Platform
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.10.
+![Banner](https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg)
 
-## Development server
+## 🚀 Live Demo
+**[Click Here to View the Live Website](http://kj-systems-india.surge.sh)**
 
-To start a local development server, run:
+## 📋 Project Overview
+A comprehensive modernization of the official **KJ Systems India** website. Transitioned from a legacy static design to a premium, high-performance corporate platform using **Angular 21** and modern **Elite Light Blue** design principles.
 
-```bash
-ng serve
-```
+The platform is designed to serve as a bridge between the company's clinical expertise (70+ years of healthcare experience) and its global software solutions like **EHR YOUR WAY**.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## ✨ Key Features
+- **Modern UI/UX**: Implemented a "Clean & Elite" aesthetic with glassmorphism, pill-shaped buttons, and premium shadows.
+- **Dynamic Services Showcase**: Interactive arrow carousel featuring EHR, Billing, Cloud, and Cybersecurity services.
+- **Operational Scalability**: Real-time stats highlighting 500+ employees and $5M+ global revenue.
+- **Physician-Led Narrative**: Detailed sections highlighting the founders' clinical background and vision.
+- **Responsive Architecture**: Fully adaptable for Mobile, Tablet, and Desktop devices with fluid typography.
+- **Authentic Imagery**: Integrated real company infrastructure and team photos with 4K clarity optimization.
+- **Global Presence**: Integrated Google Maps for multiple office locations in Vijayawada, AP.
 
-## Code scaffolding
+## 🛠️ Tech Stack
+- **Framework**: Angular 21 (Standalone Components)
+- **Logic**: TypeScript
+- **Styling**: Vanilla CSS (Custom Variables & Media Queries)
+- **Hosting**: Surge.sh
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 📸 Core Sections
+1. **Home**: Hero carousel, Services carousel, and detailed product deep-dives.
+2. **About**: Incorporation history, team gallery, and infrastructure maps.
+3. **Careers**: 2025 hiring cycle details, trainee programs, and recruitment process.
 
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
+Developed with ❤️ for **KJ Systems India Private Limited**.
