@@ -1,34 +1,57 @@
-# KJ Systems India Private Limited - Modernized Corporate Platform
+# KJ Systems India Pvt. Ltd. — Corporate Platform Modernization
 
 ![Banner](https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg)
 
-## 🚀 Live Demo
-**[Click Here to View the Live Website](http://kj-systems-india.surge.sh)**
+<p align="center">
+  <a href="http://kj-systems-india.surge.sh"><strong>🔗 View Live Site</strong></a>
+</p>
 
-## 📋 Project Overview
-A comprehensive modernization of the official **KJ Systems India** website. Transitioned from a legacy static design to a premium, high-performance corporate platform using **Angular 21** and modern **Elite Light Blue** design principles.
-
-The platform is designed to serve as a bridge between the company's clinical expertise (70+ years of healthcare experience) and its global software solutions like **EHR YOUR WAY**.
-
-## ✨ Key Features
-- **Modern UI/UX**: Implemented a "Clean & Elite" aesthetic with glassmorphism, pill-shaped buttons, and premium shadows.
-- **Dynamic Services Showcase**: Interactive arrow carousel featuring EHR, Billing, Cloud, and Cybersecurity services.
-- **Operational Scalability**: Real-time stats highlighting 500+ employees and $5M+ global revenue.
-- **Physician-Led Narrative**: Detailed sections highlighting the founders' clinical background and vision.
-- **Responsive Architecture**: Fully adaptable for Mobile, Tablet, and Desktop devices with fluid typography.
-- **Authentic Imagery**: Integrated real company infrastructure and team photos with 4K clarity optimization.
-- **Global Presence**: Integrated Google Maps for multiple office locations in Vijayawada, AP.
-
-## 🛠️ Tech Stack
-- **Framework**: Angular 21 (Standalone Components)
-- **Logic**: TypeScript
-- **Styling**: Vanilla CSS (Custom Variables & Media Queries)
-- **Hosting**: Surge.sh
-
-## 📸 Core Sections
-1. **Home**: Hero carousel, Services carousel, and detailed product deep-dives.
-2. **About**: Incorporation history, team gallery, and infrastructure maps.
-3. **Careers**: 2025 hiring cycle details, trainee programs, and recruitment process.
+<p align="center">
+  <img src="https://img.shields.io/badge/Angular-21-DD0031?logo=angular&logoColor=white" />
+  <img src="https://img.shields.io/badge/TypeScript-Strict-3178C6?logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/Status-Live-2F6F62" />
+</p>
 
 ---
-Developed with ❤️ for **KJ Systems India Private Limited**.
+
+## Overview
+
+A ground-up redesign and rebuild of the official **KJ Systems India** corporate website — replacing a legacy static site with a modern, performance-focused platform built on **Angular 21** (standalone components) and a custom **"Elite Light Blue"** design system.
+
+The site positions KJ Systems as the bridge between **70+ years of clinical/healthcare expertise** and its flagship global product, **EHR YOUR WAY**, targeting healthcare decision-makers, prospective hires, and enterprise partners.
+
+## Key Features
+
+| Area | Details |
+|---|---|
+| **UI/UX** | Glassmorphism panels, pill-shaped CTAs, layered shadows, and fluid typography for a premium, modern feel |
+| **Services Showcase** | Interactive arrow-carousel highlighting EHR, Billing, Cloud, and Cybersecurity offerings |
+| **Company Metrics** | Real-time-style stat blocks — 500+ employees, $5M+ global revenue |
+| **Brand Narrative** | Dedicated storytelling sections on the founders' clinical background and company vision |
+| **Responsiveness** | Fully adaptive layouts across mobile, tablet, and desktop breakpoints |
+| **Imagery Pipeline** | Optimized 4K company/team photography for crisp, fast-loading visuals |
+| **Location Integration** | Embedded Google Maps for multi-office presence across Vijayawada, AP |
+
+## Tech Stack
+
+- **Framework:** Angular 21 (Standalone Components architecture)
+- **Language:** TypeScript
+- **Styling:** Vanilla CSS — custom properties, container/media queries, no framework dependency
+- **Deployment:** Surge.sh
+
+## Site Architecture
+
+- **`/home`** — Hero carousel, services carousel, product deep-dive sections
+- **`/about`** — Company history, team gallery, infrastructure & office maps
+- **`/careers`** — 2025 hiring cycle info, trainee programs, recruitment pipeline
+
+## What This Project Demonstrates
+
+- Migrating a legacy static site to a modern component-based Angular architecture
+- Building a cohesive custom design system from scratch (no UI library dependency)
+- Structuring content for a real business audience (B2B healthcare, careers, investors)
+- Performance-conscious image handling and responsive design at production scale
+
+---
+
+<p align="center">Built for <strong>KJ Systems India Private Limited</strong></p>
