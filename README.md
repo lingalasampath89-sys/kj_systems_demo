@@ -55,3 +55,4 @@ The site positions KJ Systems as the bridge between **70+ years of clinical/heal
 ---
 
 <p align="center">Built for <strong>KJ Systems India Private Limited</strong></p>
+![image alt](https://github.com/lingalasampath89-sys/kj_systems_demo/blob/d1efb9abbc2f43610a301ce98111b98c23d94f95/Screenshot%20(784).png)
